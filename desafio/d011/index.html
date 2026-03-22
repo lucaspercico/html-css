@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        main#fundo{
+            background-image: url(imagens/espaco.jpg);
+            background-color: black;
+            height: 100vh;
+            position: relative;
+        }
+        div#personagem{
+            background-image: url(imagens/astronauta.png);
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    
+    <main id="fundo">
+        <div id="personagem">
+
+        </div>
+    </main>
 </body>
 </html>
