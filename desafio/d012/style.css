@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 210px;
+    padding-top: 1px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    font-size: 80px;
+    font-family:'Passion One';
+    margin-bottom:20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+section {
+    /* 1. REMOVA o height: 780px; */
+    
+    /* 2. Use padding em cima e embaixo para dar altura à section */
+    padding-top: 10vh;    /* 10% da altura da tela */
+    padding-bottom: 10vh; /* Garante que o texto não bata na próxima section */
+    padding-left: 50px; 
+    
+    box-sizing: border-box; 
+}
+section p {
+    margin: 0;
+    font-family: 'Sriracha';
+    white-space: pre-line;
+    font-size: 3.5vw; /* DICA: usar 'vw' faz a fonte diminuir em telas menores */
+    max-width: 500px; /* Isso impede o texto de espalhar demais para a direita */
+}
+
+#flor{
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.imagem {
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    /* REMOVA o margin: -125px; negativo, ele está puxando o texto para fora do lugar */
+    margin: 0; 
+}
+#livro{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 1px;
+    text-align: center;
+}
+
+
