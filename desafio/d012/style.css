@@ -4,75 +4,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
+html,body{
+    min-height: 100vh;
+}
+
 header{
-    height: 210px;
-    padding-top: 1px;
-    margin: auto;
     background-color: black;
     color: white;
     text-align: center;
 }
-header h1{
-    font-size: 80px;
-    font-family:'Passion One';
-    margin-bottom:20px;
+
+header > h1 {
+    padding-top: 50px;
+    font-family: 'Passion One';
+    font-variant: small-caps;
+    font-size: 8rem;
 }
-a{
-    text-decoration: none;
+header > p {
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 2vh;
+    
+}
+a {
     color: white;
+    text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-section {
-    /* 1. REMOVA o height: 780px; */
-    
-    /* 2. Use padding em cima e embaixo para dar altura à section */
-    padding-top: 10vh;    /* 10% da altura da tela */
-    padding-bottom: 10vh; /* Garante que o texto não bata na próxima section */
-    padding-left: 50px; 
-    
-    box-sizing: border-box; 
+section{
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    padding-left: 30px;
 }
 section p {
-    margin: 0;
     font-family: 'Sriracha';
-    white-space: pre-line;
-    font-size: 3.5vw; /* DICA: usar 'vw' faz a fonte diminuir em telas menores */
-    max-width: 500px; /* Isso impede o texto de espalhar demais para a direita */
+    font-size: 7.4vh;
+}
+section.normal{
+    color: black;
+    background-color: white;
+}
+
+section.imagem{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.445);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.imagem p {
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 802px;
 }
 
 #flor{
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
-.imagem {
-    background-color: rgba(0, 0, 0, 0.479);
-    color: white;
-    display: inline-block;
-    padding: 15px;
-    /* REMOVA o margin: -125px; negativo, ele está puxando o texto para fora do lugar */
-    margin: 0; 
-}
-#livro{
+#livro {
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
-
 footer{
     background-color: black;
-    color: white;
-    margin: 0px;
-    padding: 1px;
     text-align: center;
+    color: white;
+    padding: 10px;
 }
-
-
