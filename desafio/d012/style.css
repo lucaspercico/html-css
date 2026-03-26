@@ -61,7 +61,8 @@ section.imagem{
 }
 .imagem p {
     background-color: rgba(0, 0, 0, 0.555);
-    width: 802px;
+    max-width: 618px;
+
 }
 
 #flor{
